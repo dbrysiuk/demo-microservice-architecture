@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: demo-discovery-server
+
+server:
+  port: 9999
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false

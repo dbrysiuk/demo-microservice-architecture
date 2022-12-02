@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: demo-api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: demo-microservice
+          uri: lb://DEMO-MICROSERVICE
+          predicates:
+            - Path=/**
+
+server:
+  port: 9090
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9999/eureka

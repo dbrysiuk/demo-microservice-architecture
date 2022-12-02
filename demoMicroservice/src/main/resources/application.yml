@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: demo-microservice
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: username
+    password: password
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+server:
+  port: 7080
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9999/eureka
+
+#springdoc:
+#  swagger-ui:
+#    path: /docs/swagger-ui.html
+#  api-docs:
+#    /docs/open-api

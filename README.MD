@@ -1,0 +1,1 @@
+# Documentation for implementation and configuration is available under https://medium.com/@dbrysiuk/spring-boot-microservice-arcitecture-part-1-5b8016d39409
